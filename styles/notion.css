@@ -61,6 +61,7 @@
 .notion-gallery-grid .notion-page-icon-inline {
   display: inline-block;
   vertical-align: middle;
+  margin-top: -5px;
 }
 
 .notion-gallery-grid .notion-page-title-text {

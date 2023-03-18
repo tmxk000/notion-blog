@@ -1,0 +1,389 @@
+/**
+* 此文件包含来自概念元素的站点指定样式覆盖
+* 反应概念-X。
+ *
+* react-notion-x 的目标是尽可能接近 Notion 的样式，
+*而我们对这个网站的目标是在几个键中调整Notion的样式
+*添加一些耀斑的地方。
+ */
+
+.概念 {
+  --概念最大宽度：720像素;
+  --概念标题高度：45像素;
+}
+
+.概念框架 {
+  填充： 0;
+}
+
+.概念页 {
+  底部填充： 计算（最大（5VH， 32px）） ！重要提示;
+  线高：1.65;
+}
+
+.索引页 {
+  --概念最大宽度：900像素;
+}
+
+.概念文本 {
+  填充：0.5em 2px;
+}
+
+.概念资产标题 {
+  文本对齐：居中;
+}
+
+.概念资产包装器 {
+  顶部边距：0.5em;
+  底部边距： 0.5em;
+}
+
+.概念资产包装视频>  div，
+.概念资产包装器视频  {
+  宽度： 100% ！重要;
+}
+
+.概念标头 .概念导航标头 {
+  最大宽度：1100像素;
+  边距： 0 自动;
+}
+
+.概念-导航-标题-RHS {
+  间隙： 0.5雷姆;
+}
+
+.概念画廊网格 {
+  网格模板列：重复（自动填充，最小最大值（360像素，1fr));
+  网格间隙： 2 VMIN 3VMIN ;
+  间隙： 2VMIN 3VMIN;
+}
+
+.概念画廊网格 .概念页面图标内联 {
+  显示：内联;
+  高度：1.5全角;
+}
+
+.概念画廊网格 .概念-页面-标题-文本 {
+  字体大小： 1.5em;
+  空白：未设置;
+}
+
+.概念画廊网格 .概念-集合-卡-属性 {
+  空白：未设置;
+  文本溢出：未设置;
+}
+
+.notion-gallery-grid .notion-property-text {
+  font-size: 14px;
+}
+
+.notion-collection-card {
+  border-radius: 16px;
+  box-shadow: none;
+}
+
+.notion-collection-card-cover img {
+  border-radius: 16px;
+}
+
+.notion-collection-card {
+  overflow: visible;
+}
+
+.notion-collection-card-cover {
+  border-radius: 16px;
+  box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
+}
+
+.notion-collection-card-cover {
+  border-bottom: 0 none;
+  transition: filter 150ms linear;
+  filter: none;
+}
+
+.notion-collection-card:hover .notion-collection-card-cover {
+  filter: brightness(120%);
+}
+
+.notion-collection-card-body {
+  padding: 10px;
+}
+
+/* only target safari */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  _::-webkit-full-page-media,
+  _:future,
+  :root,
+  .notion-collection-card-cover {
+    transition: none 0ms linear;
+  }
+}
+
+.notion-quote {
+  padding: 0.2em 0.75em;
+  line-height: 1.5;
+  font-style: italic;
+  font-size: 1.2em;
+  border-left: 4px solid #67bdfc;
+}
+
+.notion-h1,
+.notion-h2,
+.notion-h3 {
+  margin-bottom: 0.25em;
+}
+
+.notion-callout {
+  margin: 0.75em 0;
+}
+
+.notion-hr {
+  margin: 2em 0;
+}
+
+@media only screen and (max-width: 920px) {
+  .index-page.notion-page {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .notion-page {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .notion-search-button {
+    display: none !important;
+  }
+}
+
+.notion .notion-page-icon-cover {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.notion-title {
+  display: block;
+  text-align: center;
+}
+
+.notion-collection-row {
+  padding-bottom: 1em;
+}
+
+.notion-collection-page-properties .notion-collection-column-title {
+  display: none;
+}
+
+.notion-collection-row-property .notion-property {
+  display: flex;
+  justify-content: center;
+}
+
+.notion-collection-row-value {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  min-height: 23px;
+}
+
+.notion-page-cover-wrapper,
+.notion-page-cover-wrapper span,
+.notion-page-cover-wrapper img {
+  max-width: 1200px !important;
+  border-radius: 24px;
+}
+
+.notion-page-cover-wrapper {
+  box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
+}
+
+@media only screen and (max-width: 1200px) {
+  .notion-page-cover-wrapper,
+  .notion-page-cover-wrapper span,
+  .notion-page-cover-wrapper img {
+    border-radius: 0;
+  }
+}
+
+.notion-block-ab9a258d6cf444f3bb40dc2600feae91 .notion-page-link {
+  justify-content: center;
+  padding: 2em;
+}
+
+.notion-code {
+  background: rgba(249, 250, 251, 1);
+  border: 1px solid rgba(229, 231, 235, 1);
+  border-radius: 0.375rem;
+}
+
+.notion-link {
+  position: relative;
+  transition: unset;
+  opacity: 1;
+  border-bottom-width: 0.1rem;
+  background: transparent;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 0 0.1rem;
+}
+
+.notion-link:focus,
+.notion-link:hover {
+  border-bottom-color: transparent;
+
+  background-image: linear-gradient(90.68deg, #b439df 0.26%, #e5337e 102.37%);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 0.1rem;
+
+  transition-property: background-position, background-size;
+  transition-duration: 300ms;
+}
+
+.notion-red_background,
+.notion-pink_background,
+.notion-blue_background,
+.notion-purple_background,
+.notion-teal_background,
+.notion-yellow_background,
+.notion-orange_background,
+.notion-brown_background,
+.notion-gray_background {
+  padding: 0 0.5rem;
+  margin: 0 -0.5rem 0 -0.25rem;
+  border-radius: 0.5rem;
+  border-bottom-left-radius: 0.125rem;
+  box-decoration-break: clone;
+
+  background-color: none;
+
+  /* light yellow */
+  background-image: linear-gradient(
+    119deg,
+    var(--bg-color),
+    #fff697 10.5%,
+    #fdf59d 85.29%,
+    var(--bg-color)
+  );
+}
+
+.notion-purple_background,
+.notion-pink_background {
+  /* light pink */
+  background-image: linear-gradient(
+    119deg,
+    var(--bg-color),
+    #f5b8d1 10.5%,
+    #f9bcd3 85.29%,
+    var(--bg-color)
+  );
+}
+
+.notion-blue_background,
+.notion-gray_background {
+  /* light blue */
+  background-image: linear-gradient(
+    119deg,
+    var(--bg-color),
+    #adedfc 10.5%,
+    #adebfd 85.29%,
+    var(--bg-color)
+  );
+}
+
+.notion-red_background,
+.notion-orange_background {
+  /* light red */
+  background-image: linear-gradient(
+    119deg,
+    var(--bg-color),
+    #f5c4ff 10.5%,
+    #e7a8fc 85.29%,
+    var(--bg-color)
+  );
+}
+
+.notion-teal_background {
+  /* light green */
+  background-image: linear-gradient(
+    119deg,
+    var(--bg-color),
+    #d4eabc 10.5%,
+    #d2eabc 85.29%,
+    var(--bg-color)
+  );
+}
+
+.notion-brown_background {
+  /* dark blue */
+  background-image: linear-gradient(
+    119deg,
+    var(--bg-color),
+    #96b8ec 10.5%,
+    #a6c3f0 85.29%,
+    var(--bg-color)
+  );
+}
+
+/* disable highlighting in dark mode */
+.dark-mode .notion-red_background,
+.dark-mode .notion-pink_background,
+.dark-mode .notion-blue_background,
+.dark-mode .notion-purple_background,
+.dark-mode .notion-teal_background,
+.dark-mode .notion-yellow_background,
+.dark-mode .notion-orange_background,
+.dark-mode .notion-brown_background,
+.dark-mode .notion-gray_background {
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  background: none !important;
+}
+
+/* if you don't want rounded page icon images, remove this */
+.notion-page-icon-hero.notion-page-icon-image {
+  border-radius: 50%;
+  框阴影： 0 8 px 40 px 0 RGB（0 0   0 /  21%);
+}
+.概念页面图标英雄。概念-页面-图标-图像跨度，
+.概念页面图标英雄。概念-页面-图标-图像 IMG {
+  边框半径： 50%;
+}
+
+.概念标头 {
+  背景： HSLA（0， 0%， 100%，  0.8);
+  背景滤镜：饱和（180%）模糊（16像素）);
+}
+
+.暗模式 .概念标头 {
+  背景：透明;
+  框阴影： 内嵌 0 -1px 0 0 RGBA（0， 0， 0，   0.1 );
+  背景滤镜：饱和（180%）模糊（8像素）);
+}
+
+/* Firefox 尚不支持背景幕过滤器的解决方法 */
+@-moz-document url-prefix（） {
+.暗模式 .概念标头 {
+    背景： HSLA（203， 8%， 20%，  0.8);
+  }
+}
+
+.概念书签：悬停 {
+  边框图像：线性渐变（90.68度， #B439DF 0.26%， #E5337E 102.37%);
+  边框图像切片：1;
+}
+
+.概念块-AB9a258d6cf444f3bb40dc2600feae91 .概念列 {
+  填充： 0;
+}
+
+.概念块-260baa77f1e1428b97fb14ac99c7c385 {
+  显示：无;
+}

@@ -59,12 +59,11 @@
 }
 
 .notion-gallery-grid .notion-page-icon-inline {
-  display: inline;
-  height: 2em;
+  display: block;
 }
 
 .notion-gallery-grid .notion-page-title-text {
-  font-size: 1em;
+  font-size: 1.2em;
   white-space: unset;
   font-weight: bold;
 }

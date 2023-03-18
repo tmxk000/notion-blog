@@ -9,7 +9,7 @@
 
 .notion {
   --notion-max-width: 720px;
-  --notion-header-height: 30px;
+  --notion-header-height: 45px;
 }
 
 .notion-frame {
@@ -34,8 +34,8 @@
 }
 
 .notion-asset-wrapper {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .notion-asset-wrapper-video > div,
@@ -55,15 +55,15 @@
 .notion-gallery-grid {
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   grid-gap: 2vmin;
-  gap: 2vmin;
+  gap: 3vmin;
 }
 
 .notion-gallery-grid .notion-page-icon-inline {
-  display: none;
+  display: inline;
 }
 
 .notion-gallery-grid .notion-page-title-text {
-  font-size: 1em;
+  font-size: 1.2em;
   white-space: unset;
 }
 

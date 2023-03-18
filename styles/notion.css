@@ -1,76 +1,76 @@
 /**
-* 此文件包含来自概念元素的站点指定样式覆盖
-* 反应概念-X。
+ * This file contains site-specifc style overrides for Notion elements from
+ * react-notion-x.
  *
-* react-notion-x 的目标是尽可能接近 Notion 的样式，
-*而我们对这个网站的目标是在几个键中调整Notion的样式
-*添加一些耀斑的地方。
+ * react-notion-x's goal is to match styling as close as possible to Notion,
+ * whereas our goal with this site is to adjust Notion's styling in a few key
+ * places to add some flare.
  */
 
-.概念 {
-  --概念最大宽度：720像素;
-  --概念标题高度：45像素;
+.notion {
+  --notion-max-width: 720px;
+  --notion-header-height: 45px;
 }
 
-.概念框架 {
-  填充： 0;
+.notion-frame {
+  padding: 0;
 }
 
-.概念页 {
-  底部填充： 计算（最大（5VH， 32px）） ！重要提示;
-  线高：1.65;
+.notion-page {
+  padding-bottom: calc(max(5vh, 32px)) !important;
+  line-height: 1.65;
 }
 
-.索引页 {
-  --概念最大宽度：900像素;
+.index-page {
+  --notion-max-width: 900px;
 }
 
-.概念文本 {
-  填充：0.5em 2px;
+.notion-text {
+  padding: 0.5em 2px;
 }
 
-.概念资产标题 {
-  文本对齐：居中;
+.notion-asset-caption {
+  text-align: center;
 }
 
-.概念资产包装器 {
-  顶部边距：0.5em;
-  底部边距： 0.5em;
+.notion-asset-wrapper {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
-.概念资产包装视频>  div，
-.概念资产包装器视频  {
-  宽度： 100% ！重要;
+.notion-asset-wrapper-video > div,
+.notion-asset-wrapper-video video {
+  width: 100% !important;
 }
 
-.概念标头 .概念导航标头 {
-  最大宽度：1100像素;
-  边距： 0 自动;
+.notion-header .notion-nav-header {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.概念-导航-标题-RHS {
-  间隙： 0.5雷姆;
+.notion-nav-header-rhs {
+  gap: 0.5rem;
 }
 
-.概念画廊网格 {
-  网格模板列：重复（自动填充，最小最大值（360像素，1fr));
-  网格间隙： 2 VMIN 3VMIN ;
-  间隙： 2VMIN 3VMIN;
+.notion-gallery-grid {
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-gap: 2vmin 3vmin;
+  gap: 2vmin 3vmin;
 }
 
-.概念画廊网格 .概念页面图标内联 {
-  显示：内联;
-  高度：1.5全角;
+.notion-gallery-grid .notion-page-icon-inline {
+  display: inline;
+  height: 1.5em;
 }
 
-.概念画廊网格 .概念-页面-标题-文本 {
-  字体大小： 1.5em;
-  空白：未设置;
+.notion-gallery-grid .notion-page-title-text {
+  font-size: 1.5em;
+  white-space: unset;
 }
 
-.概念画廊网格 .概念-集合-卡-属性 {
-  空白：未设置;
-  文本溢出：未设置;
+.notion-gallery-grid .notion-collection-card-property {
+  white-space: unset;
+  text-overflow: unset;
 }
 
 .notion-gallery-grid .notion-property-text {
@@ -350,40 +350,40 @@
 /* if you don't want rounded page icon images, remove this */
 .notion-page-icon-hero.notion-page-icon-image {
   border-radius: 50%;
-  框阴影： 0 8 px 40 px 0 RGB（0 0   0 /  21%);
+  box-shadow: 0 8px 40px 0 rgb(0 0 0 / 21%);
 }
-.概念页面图标英雄。概念-页面-图标-图像跨度，
-.概念页面图标英雄。概念-页面-图标-图像 IMG {
-  边框半径： 50%;
-}
-
-.概念标头 {
-  背景： HSLA（0， 0%， 100%，  0.8);
-  背景滤镜：饱和（180%）模糊（16像素）);
+.notion-page-icon-hero.notion-page-icon-image span,
+.notion-page-icon-hero.notion-page-icon-image img {
+  border-radius: 50%;
 }
 
-.暗模式 .概念标头 {
-  背景：透明;
-  框阴影： 内嵌 0 -1px 0 0 RGBA（0， 0， 0，   0.1 );
-  背景滤镜：饱和（180%）模糊（8像素）);
+.notion-header {
+  background: hsla(0, 0%, 100%, 0.8);
+  backdrop-filter: saturate(180%) blur(16px);
 }
 
-/* Firefox 尚不支持背景幕过滤器的解决方法 */
-@-moz-document url-prefix（） {
-.暗模式 .概念标头 {
-    背景： HSLA（203， 8%， 20%，  0.8);
+.dark-mode .notion-header {
+  background: transparent;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+  backdrop-filter: saturate(180%) blur(8px);
+}
+
+/* Workaround for Firefox not supporting backdrop-filter yet */
+@-moz-document url-prefix() {
+  .dark-mode .notion-header {
+    background: hsla(203, 8%, 20%, 0.8);
   }
 }
 
-.概念书签：悬停 {
-  边框图像：线性渐变（90.68度， #B439DF 0.26%， #E5337E 102.37%);
-  边框图像切片：1;
+.notion-bookmark:hover {
+  border-image: linear-gradient(90.68deg, #b439df 0.26%, #e5337e 102.37%);
+  border-image-slice: 1;
 }
 
-.概念块-AB9a258d6cf444f3bb40dc2600feae91 .概念列 {
-  填充： 0;
+.notion-block-ab9a258d6cf444f3bb40dc2600feae91 .notion-column {
+  padding: 0;
 }
 
-.概念块-260baa77f1e1428b97fb14ac99c7c385 {
-  显示：无;
+.notion-block-260baa77f1e1428b97fb14ac99c7c385 {
+  display: none;
 }

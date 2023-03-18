@@ -59,8 +59,8 @@
 }
 
 .notion-gallery-grid .notion-page-icon-inline {
-  display: inline;
-  vertical-align: text-bottom;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .notion-gallery-grid .notion-page-title-text {

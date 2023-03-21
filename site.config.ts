@@ -16,7 +16,7 @@ export default siteConfig({
   // open graph metadata (optional)
   description: '可可的个人博客测试...',
   
-  language: 'chinese'
+  language: 'china'
 
   // social usernames (optional)
   twitter: '',

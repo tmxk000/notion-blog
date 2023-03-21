@@ -16,8 +16,6 @@ export default siteConfig({
   // open graph metadata (optional)
   description: '可可的个人博客测试...',
   
-  language: 'zh-CN',
-  
   // social usernames (optional)
   twitter: '',
   github: 'tmxk000',
@@ -57,11 +55,11 @@ export default siteConfig({
    navigationStyle: 'custom',
    navigationLinks: [
      {
-       title: '关于',
+       title: 'About',
        pageId: 'd8b6c7f187a34a919ab377fc82ac8a8d'
      },
      {
-       title: '联系方式',
+       title: 'Contact',
        pageId: '101d53178b124e6382049a3a350d5a96'
      }
    ]

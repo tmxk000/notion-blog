@@ -65,6 +65,11 @@
 }
 
 .notion-gallery-grid .notion-page-title-text {
+  font-size: 1em;
+  white-space: unset;
+}
+
+.index-gallery-grid .notion-page-title-text {
   font-size: 1.2em;
   white-space: unset;
   font-weight: bold;

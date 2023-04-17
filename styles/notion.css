@@ -77,7 +77,7 @@
 
 .notion-gallery-grid .notion-collection-card-property {
   white-space: unset;
-  text-overflow: unset;
+  text-overflow: ellipsis;
 }
 
 .notion-gallery-grid .notion-property-text {

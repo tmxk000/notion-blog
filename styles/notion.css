@@ -66,18 +66,19 @@
 
 .notion-gallery-grid .notion-page-title-text {
   font-size: 1em;
-  white-space: unset;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: bold;
 }
 
 .index-gallery-grid .notion-page-title-text {
   font-size: 1.2em;
   white-space: unset;
-  font-weight: bold;
 }
 
 .notion-gallery-grid .notion-collection-card-property {
   white-space: unset;
-  text-overflow: ellipsis;
+  text-overflow: unset;
 }
 
 .notion-gallery-grid .notion-property-text {
